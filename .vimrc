@@ -7,7 +7,7 @@ set enc=utf-8
 set fenc=utf-8
 set termencoding=utf-8
 set nospell
-
+set background=dark
 " disable vi compatibility (emulation of old bugs)
 set nocompatible
 " use indentation of previous line
@@ -39,6 +39,17 @@ set tags+=~/.vim/tags/cpp
 set tags+=~/.vim/tags/gl
 set tags+=~/.vim/tags/sdl
 set tags+=~/.vim/tags/qt4
+
+" UltiSnips bindings
+let g:UltiSnipsEditSplit='vertical'
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-k>"
+let g:UltiSnipsJumpBackwardTrigger="<c-j>"
+
+"indent guides
+
+let g:indent_guides_enable_on_vim_startup=1
+let g:indent_guides_guide_size=1
 
 " Install DoxygenToolkit from http://www.vim.org/scripts/script.php?script_id=987
 let g:DoxygenToolkit_authorName="Rishub Nagpal <rishubster@gmail.com>"
